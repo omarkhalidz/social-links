@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(75, 94%, 57%);
+}
+::selection {
+  background: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", serif;
+}
+.page {
+  max-width: 400px;
+  margin: 150px auto;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 15px;
+  padding: 45px;
+  text-align: center;
+}
+
+.img img {
+  padding: 1px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.img img:hover {
+  outline: 1px solid hsl(75, 94%, 57%);
+}
+.text {
+  margin: 20px 0;
+}
+.text h3 {
+  color: white;
+  font-size: 32px;
+  margin: 10px 0 4px;
+  font-weight: 400;
+}
+.text span {
+  color: hsl(75, 94%, 57%);
+}
+.text p {
+  color: rgb(188, 188, 188);
+  margin: 20px 0 0;
+  font-size: 14px;
+}
+
+.links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.links ul li {
+  margin-top: 10px;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+.links ul li:hover {
+  background-color: hsl(75, 94%, 57%);
+  a {
+    color: hsl(0, 0%, 8%);
+  }
+}
+.links ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  height: 100%;
+  width: 100%;
+  padding: 15px 0;
+  user-select: none;
+}
+@media (max-width: 767px) {
+  .page {
+    max-width: 360px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .text {
+    margin: 15px 0;
+  }
+  .text h3 {
+    color: white;
+    font-size: 30px;
+    margin: 10px 0 4px;
+    font-weight: 400;
+  }
+  .text p {
+    color: rgb(188, 188, 188);
+    margin: 15px 0 0;
+    font-size: 13px;
+  }
+  .links ul li {
+    margin-top: 10px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 10px;
+    transition: background-color 0.2s;
+  }
+
+  .links ul li:hover {
+    background-color: hsl(75, 94%, 57%);
+    a {
+      color: hsl(0, 0%, 8%);
+    }
+  }
+  .links ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 15px;
+  }
+}
